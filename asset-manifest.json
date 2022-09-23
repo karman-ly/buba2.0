@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/buba2.0/static/css/main.def1f123.css",
-    "main.js": "/buba2.0/static/js/main.326fca8c.js",
-    "static/js/787.edfb172c.chunk.js": "/buba2.0/static/js/787.edfb172c.chunk.js",
-    "static/media/logo.svg": "/buba2.0/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/buba2.0/static/css/main.bbd7ce2e.css",
+    "main.js": "/buba2.0/static/js/main.7e9f3c49.js",
     "index.html": "/buba2.0/index.html",
-    "main.def1f123.css.map": "/buba2.0/static/css/main.def1f123.css.map",
-    "main.326fca8c.js.map": "/buba2.0/static/js/main.326fca8c.js.map",
-    "787.edfb172c.chunk.js.map": "/buba2.0/static/js/787.edfb172c.chunk.js.map"
+    "main.bbd7ce2e.css.map": "/buba2.0/static/css/main.bbd7ce2e.css.map",
+    "main.7e9f3c49.js.map": "/buba2.0/static/js/main.7e9f3c49.js.map"
   },
   "entrypoints": [
-    "static/css/main.def1f123.css",
-    "static/js/main.326fca8c.js"
+    "static/css/main.bbd7ce2e.css",
+    "static/js/main.7e9f3c49.js"
   ]
 }
