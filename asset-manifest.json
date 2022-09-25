@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/buba2.0/static/css/main.bbd7ce2e.css",
+    "main.css": "/buba2.0/static/css/main.f644d77e.css",
     "main.js": "/buba2.0/static/js/main.7e9f3c49.js",
     "index.html": "/buba2.0/index.html",
-    "main.bbd7ce2e.css.map": "/buba2.0/static/css/main.bbd7ce2e.css.map",
+    "main.f644d77e.css.map": "/buba2.0/static/css/main.f644d77e.css.map",
     "main.7e9f3c49.js.map": "/buba2.0/static/js/main.7e9f3c49.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbd7ce2e.css",
+    "static/css/main.f644d77e.css",
     "static/js/main.7e9f3c49.js"
   ]
 }
