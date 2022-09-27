@@ -1,5 +1,7 @@
 article {
   width: 50%;
+  align-self: start;
+  padding-top: 20%;
 }
 
 article * {
@@ -9,13 +11,6 @@ article * {
 }
 
 article ul li {
-  margin: 0 1rem;
-}
-
-.small {
-  font-size: small;
-}
-
-.visible {
   opacity: 1;
+  margin: 0 1rem;
 }
