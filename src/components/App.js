@@ -16,8 +16,16 @@ export default function App() {
 
   const handleCLick = () => {
     setShownParagraphs(x => x + 1)
-    if (shownParagraphs >= content.length)
-      setContent(content => [...content, getRandomContent()])
+    if (shownParagraphs >= content.length - 1)
+      setContent(content => {
+        let newContent
+        while (true) {
+          newContent = getRandomContent()
+          if (newContent.text !== content[content.length - 1].text)
+            break
+        }
+        return [...content, newContent]
+      })
   }
 
   return (

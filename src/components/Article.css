@@ -1,7 +1,7 @@
 article {
   width: 50%;
   align-self: start;
-  padding-top: 20%;
+  padding-top: 20px;
 }
 
 article * {

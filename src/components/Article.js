@@ -14,9 +14,19 @@ export default function Article({shownParagraphs, content}) {
     )
   })
 
+  const ref = React.useRef(null)
+  function scrollToBottom() {
+    ref.current?.scrollIntoView({behavior: "smooth"})
+  }
+
+  React.useEffect(() => {
+    scrollToBottom()
+  }, [content])
+
   return (
       <article>
         {contentElements}
+        <div ref={ref}/>
       </article>
   )
 }
