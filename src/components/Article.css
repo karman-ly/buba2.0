@@ -1,13 +1,23 @@
 article {
   width: 50%;
   align-self: start;
-  padding-top: 20px;
+  font-size: inherit;
+  overflow: scroll;
+  height: 100vh;
+}
+
+article::-webkit-scrollbar {
+  width: 0
 }
 
 article * {
   margin: 1rem;
   opacity: 0;
   transition: 1s;
+}
+
+article img {
+  width: 100%;
 }
 
 article ul li {

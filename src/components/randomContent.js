@@ -1,4 +1,4 @@
-const randomContent = [
+let randomContent = [
     "O hi mark",
     "wow ur so beautiful",
     "i want beautiful kex with you",
@@ -9,7 +9,7 @@ const randomContent = [
     "нос чешется",
     "я юю тя а ти миии?",
     "ми скоро бу вмести!",
-    "ти кукурузятко"
+    "ти кукурузятко",
 ]
 
 randomContent.forEach((element, index) => {

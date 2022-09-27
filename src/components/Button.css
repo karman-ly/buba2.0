@@ -1,9 +1,8 @@
-.button-container button {
+button {
   color: #493656;
   background: white;
   border: none;
   padding: 0.5rem 1rem;
-  position: fixed;
-  top: 50%;
-  right: 10%;
+  font-size: inherit;
+  align-self: center;
 }

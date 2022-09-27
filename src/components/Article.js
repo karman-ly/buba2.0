@@ -8,7 +8,8 @@ export default function Article({shownParagraphs, content}) {
         paragraph.tag,
         {
           key: index,
-          style: {opacity: index < shownParagraphs ? "1" : "0"}
+          style: {opacity: index < shownParagraphs ? "1" : "0"},
+          src: paragraph.src
         },
         paragraph.text
     )
