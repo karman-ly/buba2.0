@@ -2,7 +2,19 @@ button {
   color: #493656;
   background: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   font-size: inherit;
   align-self: center;
+  transition: 0.15s;
+}
+
+button:hover {
+  outline: 2px solid white;
+  outline-offset: -2px;
+  background: none;
+  color: white;
+}
+
+button:active {
+  scale: 0.95
 }
