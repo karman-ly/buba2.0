@@ -1,2 +1,0 @@
-*{box-sizing:border-box;margin:0;padding:0}body{background:#493656;color:#fff;font-family:Poppins,sans-serif;font-size:2rem;height:100vh}.app{align-content:center;display:flex;justify-content:space-evenly}article{align-self:start;font-size:inherit;height:100vh;overflow:scroll;width:50%}article::-webkit-scrollbar{width:0}article *{margin:1rem;opacity:0;transition:1s}article img{width:100%}article ul li{margin:0 1rem;opacity:1}button{align-self:center;background:#fff;border:none;color:#493656;font-size:inherit;padding:.5rem 1rem}
-/*# sourceMappingURL=main.9376f1da.css.map*/
