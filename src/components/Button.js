@@ -1,9 +1,9 @@
 import "./Button.css"
 
-export default function Button() {
+export default function Button({handleClick}) {
   return (
       <div className="button-container">
-        <button>Press me (only for Sony)</button>
+        <button onClick={handleClick}>Press me (only for Sony)</button>
       </div>
   )
 }

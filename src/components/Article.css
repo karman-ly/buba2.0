@@ -1,9 +1,11 @@
 article {
-  width: 500px;
+  width: 50%;
 }
 
 article * {
   margin: 1rem;
+  opacity: 0;
+  transition: 1s;
 }
 
 article ul li {
@@ -12,4 +14,8 @@ article ul li {
 
 .small {
   font-size: small;
+}
+
+.visible {
+  opacity: 1;
 }
