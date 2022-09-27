@@ -40,7 +40,7 @@ export default function Article({shownParagraphs}) {
       tag: "p"
     }
   ]
-  React.createElement("h1",)
+
   const contentElements = content.map((paragraph, index) => {
 
     const element = React.createElement(
