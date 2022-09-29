@@ -9,23 +9,22 @@ export default function Article({content}) {
         {
           key: index,
           style: {opacity: index < content.length - 1 ? "1" : "0"},
-          src: paragraph.src
         },
         paragraph.text
     )
   })
 
-  const ref = React.useRef(null)
+  const ref = React.useRef()
   function scrollToBottom() {
     ref.current?.scrollIntoView({behavior: "smooth"})
   }
-
   React.useEffect(scrollToBottom, [content])
 
   return (
       <article>
-        {contentElements}
-        <div className="empty" ref={ref}/>
+        {contentElements.slice(0, -2)}
+        <div className="empty" ref={ref}></div>
+        {contentElements.slice(-2)}
       </article>
   )
 }
