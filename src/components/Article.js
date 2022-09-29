@@ -1,14 +1,14 @@
 import React from "react"
 import "./Article.css"
 
-export default function Article({shownParagraphs, content}) {
+export default function Article({content}) {
 
   const contentElements = content.map((paragraph, index) => {
     return React.createElement(
         paragraph.tag,
         {
           key: index,
-          style: {opacity: index < shownParagraphs ? "1" : "0"},
+          style: {opacity: index < content.length - 1 ? "1" : "0"},
           src: paragraph.src
         },
         paragraph.text
@@ -20,14 +20,12 @@ export default function Article({shownParagraphs, content}) {
     ref.current?.scrollIntoView({behavior: "smooth"})
   }
 
-  React.useEffect(() => {
-    scrollToBottom()
-  }, [content])
+  React.useEffect(scrollToBottom, [content])
 
   return (
       <article>
         {contentElements}
-        <div ref={ref}/>
+        <div className="empty" ref={ref}/>
       </article>
   )
 }

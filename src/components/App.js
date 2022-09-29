@@ -2,35 +2,38 @@ import React from "react"
 import './App.css';
 import Article from "./Article"
 import Button from "./Button"
-import content from "./content";
-import randomContent from "./randomContent"
+import {content as initialContent} from "./content";
+import {randomContent} from "./randomContent"
 
 export default function App() {
 
-  const [shownParagraphs, setShownParagraphs] = React.useState(0)
-  const [stateContent, setContent] = React.useState(content)
+  const [content, setContent] = React.useState([initialContent[0]])
 
   function getRandomContent() {
     return randomContent[Math.floor(Math.random() * randomContent.length)]
   }
 
-  const handleCLick = () => {
-    setShownParagraphs(x => x + 1)
-    if (shownParagraphs >= content.length - 1)
-      setContent(content => {
+  function handleCLick() {
+    setContent(content => {
+      const lastItem = content[content.length - 1]
+      if (content.length < initialContent.length) {
+        return [...content, initialContent[content.length]]
+      }
+      else {
         let newContent
         while (true) {
           newContent = getRandomContent()
-          if (newContent.text !== content[content.length - 1].text)
+          if (newContent.text !== lastItem.text)
             break
         }
         return [...content, newContent]
-      })
+      }
+    })
   }
 
   return (
       <div className="app">
-        <Article shownParagraphs={shownParagraphs} content={stateContent}/>
+        <Article content={content}/>
         <Button handleClick={handleCLick}/>
       </div>
   );

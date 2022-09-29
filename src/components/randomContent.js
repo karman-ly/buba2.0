@@ -1,4 +1,4 @@
-let randomContent = [
+export const randomContent = [
     "O hi mark",
     "wow ur so beautiful",
     "i want beautiful kex with you",
@@ -15,5 +15,3 @@ let randomContent = [
 randomContent.forEach((element, index) => {
     randomContent[index] = {text: element, tag: "p"}
 })
-
-export default randomContent

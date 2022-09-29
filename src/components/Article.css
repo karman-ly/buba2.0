@@ -25,3 +25,8 @@ article ul li {
   opacity: 1;
   margin: 0 1rem;
 }
+
+.empty {
+  margin: 0;
+  padding: 0;
+}
